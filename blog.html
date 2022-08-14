@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arima:wght@200&family=Gulzar&family=Nunito:wght@200&family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section class="subheader">
+        <nav>
+            <a href="index.html">  <img src="logo.png" alt=" logo"> </a>
+            <div class="nav-links" id="navLinks">
+                <ion-icon name="close-circle-outline" onclick="hideMenu()"></ion-icon>
+                <ul>
+                  
+                    <li><a href="index.html"  > Home </a></li>
+                    <li><a href="about.html"> About </a></li>
+                    <li><a href="course.html"> Course</a></li>
+                    
+                    <li><a href="contact.html"> Contact</a></li>
+                </ul>
+            </div>
+            <ion-icon name="grid-outline" onclick="showMenu()"></ion-icon>
+        </nav>
+        <h1>Our Certificate & online Programs for 2023</h1>
+    </section>
+
+
+    <!--  blog page  content -->
+
+    <section class="blogcontent">
+        <div class="row">
+            <div class="blogleft">
+                <img src="certificate.jpg" >
+                <h2>Our Certificate & online Programs for 2023</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus incidunt eligendi rem maiores reiciendis sapiente enim pariatur magnam, dolorem omnis repellat ipsum quibusdam voluptatem ipsa fugiat laboriosam quis repudiandae recusandae dolore fugit? Tempore dolore quibusdam ea, consectetur fuga totam nostrum vero ratione. Ea, saepe! Velit vitae eum quam odit harum.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam asperiores, inventore assumenda praesentium repudiandae deleniti a. Nihil minus fugit atque aperiam nesciunt iusto ad molestiae, ipsam impedit totam dolorem odio alias harum consectetur eligendi, sequi distinctio eos numquam beatae illum suscipit quis soluta quam? Expedita quibusdam aspernatur architecto ratione aliquid!</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non itaque odio nisi quidem, reprehenderit, earum doloremque sapiente incidunt repellendus sed esse atque exercitationem dolorem ad quod quia doloribus placeat distinctio hic. Consequatur quaerat reprehenderit possimus cumque harum fuga perferendis est nisi illum ducimus, at temporibus repellendus quae dicta voluptatum laborum.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum maxime dolores ab, eos, aperiam debitis quam provident quaerat iure repellat quas exercitationem fugit libero harum reiciendis illum pariatur soluta excepturi, earum corrupti? Autem odio dolor quaerat alias error aspernatur magni vitae dolore voluptates nulla ullam, non quidem ex! Quod, harum.</p>
+
+                <div class="comment-box">
+                    <h3>Leave a Comment</h3>
+                    <form class="comment-form" action="form-handler2.php" method="post">
+                        <input type="text" name="name" placeholder="Enter Name">
+                        <input type="email" name="email "placeholder="Enter Email">
+                        <textarea rows="5"name="message" placeholder="Your Comment"></textarea>
+                        <button type="submit" class="herobtn redbtn">Post Comment</button>
+
+                    </form>
+                </div>
+            </div>
+            <div class="blogright">
+                <h3>Post Categories</h3>
+                <br>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>20</span>
+                </div>
+                <div>
+                    <span>Computer Science</span>
+                    <span>36</span>
+                </div>
+                <div>
+                    <span>Electronics and Communication</span>
+                    <span>56</span>
+                </div>
+                <div>
+                    <span>Journalism</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Commerce</span>
+                    <span>30</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <sectio class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quia enim aliquam, a voluptas veritatis <br> repellat, aut, blanditiis eos itaque maxime possimus et officiis cupiditate tempora dignissimos illo assumenda perferendis.</p>
+        <div class="icons">
+          <a href="https://www.facebook.com/raj.mrinmoy003"> <ion-icon name="logo-facebook"></ion-icon></a> 
+          <a href="http://"> <ion-icon name="logo-twitter"></ion-icon></a> 
+            <a href="https://www.instagram.com/mrinmoy1999/">  <ion-icon name="logo-instagram"></ion-icon></a> 
+                <a href="https://www.linkedin.com/in/mrinmoy-bhattacharjee-9231ba238/">  <ion-icon name="logo-linkedin"></ion-icon></a> 
+
+        </div>
+        <p>Made with  <ion-icon name="heart"></ion-icon>  by Mrinmoy </p>
+    </sectio>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- script for toggle menu -->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+
+
+
+
+
+
+</body>
+</html>
+
+
